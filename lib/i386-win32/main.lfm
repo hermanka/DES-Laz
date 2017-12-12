@@ -1,0 +1,76 @@
+object Form1: TForm1
+  Left = 650
+  Height = 240
+  Top = 184
+  Width = 557
+  Caption = 'DES App'
+  ClientHeight = 240
+  ClientWidth = 557
+  LCLVersion = '1.6.0.4'
+  object btnEnc: TButton
+    Left = 19
+    Height = 25
+    Top = 48
+    Width = 109
+    Caption = 'Encrypt'
+    OnClick = btnEncClick
+    TabOrder = 0
+  end
+  object btnDec: TButton
+    Left = 152
+    Height = 25
+    Top = 48
+    Width = 112
+    Caption = 'Decrypt'
+    OnClick = btnDecClick
+    TabOrder = 1
+  end
+  object mInput: TMemo
+    Left = 19
+    Height = 128
+    Top = 104
+    Width = 245
+    OnChange = mInputChange
+    ScrollBars = ssAutoVertical
+    TabOrder = 2
+  end
+  object eKey: TEdit
+    Left = 64
+    Height = 23
+    Top = 13
+    Width = 200
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 19
+    Height = 15
+    Top = 16
+    Width = 25
+    Caption = 'Key :'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 15
+    Top = 80
+    Width = 152
+    Caption = 'Enter Plaintext / Cipehertext :'
+    ParentColor = False
+  end
+  object mOutput: TMemo
+    Left = 280
+    Height = 194
+    Top = 38
+    Width = 264
+    ScrollBars = ssAutoVertical
+    TabOrder = 4
+  end
+  object Label3: TLabel
+    Left = 280
+    Height = 15
+    Top = 16
+    Width = 44
+    Caption = 'Output :'
+    ParentColor = False
+  end
+end
